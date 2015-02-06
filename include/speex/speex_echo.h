@@ -59,6 +59,8 @@ extern "C" {
 /** Get impulse response (int32[]) */
 #define SPEEX_ECHO_GET_IMPULSE_RESPONSE 29
 
+#define SPEEX_ECHO_GET_ADAPTED 31
+
 /** Internal echo canceller state. Should never be accessed directly. */
 struct SpeexEchoState_;
 

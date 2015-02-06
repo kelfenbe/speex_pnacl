@@ -4236,7 +4236,7 @@ irix5* | irix6* | nonstopux*)
   ;;
 
 # This must be Linux ELF.
-linux* | k*bsd*-gnu)
+linux* | k*bsd*-gnu | nacl* | nacl*)
   lt_cv_deplibs_check_method=pass_all
   ;;
 
@@ -9808,6 +9808,28 @@ uts4*)
   shlibpath_var=LD_LIBRARY_PATH
   ;;
 
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
 *)
   dynamic_linker=no
   ;;
@@ -13786,6 +13808,28 @@ uts4*)
   shlibpath_var=LD_LIBRARY_PATH
   ;;
 
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
 *)
   dynamic_linker=no
   ;;
@@ -16420,6 +16464,28 @@ uts4*)
   shlibpath_var=LD_LIBRARY_PATH
   ;;
 
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
 *)
   dynamic_linker=no
   ;;
@@ -19052,6 +19118,28 @@ uts4*)
   library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major $libname${shared_ext}'
   soname_spec='${libname}${release}${shared_ext}$major'
   shlibpath_var=LD_LIBRARY_PATH
+  ;;
+
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
+  ;;
+
+nacl)
+  if $CC -v 2>&1 | grep -q enable-shared; then
+    dynamic_linker="GNU/NaCl ld.so"
+    version_type=linux
+    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+    soname_spec='${libname}${release}${shared_ext}$major'
+  else
+    dynamic_linker=no
+  fi
   ;;
 
 *)
