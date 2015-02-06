@@ -1254,6 +1254,9 @@ EXPORT int speex_echo_ctl(SpeexEchoState *st, int request, void *ptr)
       case SPEEX_ECHO_GET_SAMPLING_RATE:
          (*(int*)ptr) = st->sampling_rate;
          break;
+      case SPEEX_ECHO_GET_ADAPTED:
+         (*(int*)ptr) = st->adapted;
+         break;
       case SPEEX_ECHO_GET_IMPULSE_RESPONSE_SIZE:
          /*FIXME: Implement this for multiple channels */
          *((spx_int32_t *)ptr) = st->M * st->frame_size;
